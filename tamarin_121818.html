@@ -1,0 +1,93 @@
+<html>
+<script>
+    //تمرین اول
+    let number = 4;
+    let flag = true;
+    for (let i = 2; i < number; i++) {
+        if (number % i === 0) {
+            flag = false;
+            break
+        }
+    }
+    if (flag) {
+        console.log(`the ${number} is a prime number`)
+    }
+    else {
+        console.log(`the ${number} is not a prime number`)
+    }
+
+
+
+    //تمرین دوم 
+    let employee = {
+        name: "sara",
+        age: 28,
+        salary: null,
+        department: undefined
+    }
+    for (let key in employee) {
+        if (employee[key] === null || employee[key] === undefined) {
+            console.log(key)
+            delete employee[key]
+        }
+    }
+    console.log(employee)
+
+
+
+    //تمرین سوم
+
+
+    let output = ""
+    let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+    for (let content of array) {
+        if (content % 2 === 0) {
+            output += content + "-"
+        }
+    }
+    console.log(output)
+
+    // تمرین چهارم
+    sum = 0
+    let array2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+    for (let content of array2) {
+        sum = sum + content
+    }
+    console.log("**", sum, "**")
+
+    sum = 0
+    let array3= [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+    for (let i=0; i<array3.length; i++) {
+        sum = sum + array3[i]
+    }
+    console.log("**", sum, "**")
+
+
+
+    //تمرین پنجم
+    let inputnumber = 7
+    let fibo = []
+    if (inputnumber >= 1) { fibo.push(0) }
+    if (inputnumber >= 2) { fibo.push(1) }
+    let firstnumber = 0
+    let secondenumber = 1
+    for (let i = 2; i < inputnumber; i++) {
+        let nextnumber = firstnumber + secondenumber
+        fibo.push(nextnumber)
+        firstnumber = secondenumber
+        secondenumber = nextnumber
+    }
+    console.log(fibo)
+
+    //تمرین ششم
+    let input_number = 60
+    let fact = 1
+    for (let i = 1; i <= input_number; i++) {
+        fact = fact * i
+    }
+    console.log(fact)
+</script>
+<body><h1>در بخش incpect تمامی کد ها قرار دارد در بخش console آن</h1></body>
+
+
+</html>
